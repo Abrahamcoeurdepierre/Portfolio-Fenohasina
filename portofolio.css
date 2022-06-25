@@ -557,10 +557,15 @@ ul li a:hover{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .card-project:hover {
     background-color: #08FDD8;
     cursor: pointer;
+}
+.card-project .tech{
+    position: absolute;
+    bottom: 20px;
 }
 .card-project::before{
     content: "";
