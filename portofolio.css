@@ -231,9 +231,9 @@ h2{
 .box div:first-child{
     top:10%;
     left:30%;
-    animation:5s linear 3.2s infinite background-animation
+    animation:5s linear 3.2s infinite background-animation;
 }
-.box div:nth-child(2){
+/*.box div:nth-child(2){
     top:30%;
     left:40%;
     animation:5s linear infinite background-animation
@@ -343,7 +343,7 @@ h2{
     top:89%;
     left:30%;
     animation:5s linear infinite background-animation
-}
+} */
 .contact button:hover,.tech .purple{
     border:1px solid #fd08e0
 }
