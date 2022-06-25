@@ -270,6 +270,7 @@ h2{
     opacity: 0;
 }
 
+@media screen and (min-width: 601px) {
 .box div:nth-child(1){
     top: 10%;
     left:30%;
@@ -399,6 +400,8 @@ h2{
     box-shadow: 0 0 10px #d8fd08,
     0 0 20px #d8fd08;
     border: 2px solid #d8fd08;
+}
+
 }
 @keyframes background-animation {
     0%{
@@ -693,60 +696,6 @@ footer{
 
  
 @media screen and (max-width: 600px) {
-    .box div:nth-child(1){
-        display: none;
-        animation: none;
-    }
-    .box div:nth-child(2){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(3){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(4){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(5){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(6){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(10){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(15){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(12){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(19){
-        display: none;
-        animation: none;
-
-    }
-    .box div:nth-child(14){
-        display: none;
-        animation: none;
-
-    }
     .landingPage{
         flex-direction: column-reverse;
         align-items: center;
@@ -809,6 +758,41 @@ footer{
    
   }
 @media screen and (max-width: 1021px) {
+
+    .box div:nth-child(1){
+        top: 90%;
+        left:30%;
+        animation: background-animation 5s linear infinite 3.2s;
+    }
+    .box div:nth-child(2){
+        top: 30%;
+        left:40%;
+        animation: background-animation 5s linear infinite ;
+    }
+    .box div:nth-child(3){
+        top: 70%;
+        left:10%;
+        animation: background-animation 5s linear infinite 2.2s;
+        box-shadow: 0 0 10px #fd08e0,
+        0 0 20px #fd08e0;
+        border: 2px solid #fd08e0;
+    }
+    .box div:nth-child(7){
+        top: 50%;
+        left:70%;
+        animation: background-animation 5s linear infinite 1.7s;
+        box-shadow: 0 0 10px #fd08e0,
+        0 0 20px #fd08e0;
+        border: 2px solid #fd08e0;
+    }
+    .box div:nth-child(8){
+        top: 40%;
+        left:90%;
+        animation: background-animation 5s linear infinite 3s;
+        box-shadow: 0 0 10px #d8fd08,
+        0 0 20px #d8fd08;
+        border: 2px solid #d8fd08;
+    }
     .landingPage .fname , .lname{
         font-size: 45px;
         letter-spacing: 2px;
