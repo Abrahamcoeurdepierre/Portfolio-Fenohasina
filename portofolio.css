@@ -20,7 +20,7 @@ body{
 
 .desc , .tagline{
     transform: translateX(-1000px);
-    animation: slide-right 1s ease-out 2s forwards;
+    animation: slide-right 1s linear 2s forwards;
 } 
 @keyframes slide-right {
     to{
@@ -98,7 +98,7 @@ h2{
     align-items: center;
     width: 35%;
     transform: translateX(500px);
-    animation: bulbAnim 1s ease-out 2s forwards;
+    animation: bulbAnim 1s linear 2s forwards;
 }
 .landingPage{
     display: flex;
