@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="landingPage" id="landingPage">
-        <div class="box">
+        <div class="box" id="box">
             <div></div>
             <div></div>
             <div></div>
@@ -304,5 +304,17 @@
                 form.submit();
                 form.reset();
             });
+
+
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    const box = document.getElementById('box');
+                    box.parentNode.removeChild(box);
+                } 
+            }
+
+            var x = window.matchMedia("(max-width: 600px)");
+            myFunction(x);
+            x.addListener(myFunction);
     </script>
 </html>
