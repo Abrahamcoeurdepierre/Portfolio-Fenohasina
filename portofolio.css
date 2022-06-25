@@ -1,0 +1,810 @@
+@import url('https://fonts.google.com/share?selection.family=Poppins:wght@200');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+@font-face {
+    font-family: neon;
+    src: url("NeonTubes2.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #CBD9F4;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+
+.desc , .tagline{
+    transform: translateX(-1000px);
+    animation: slide-right 1s ease-out 2s forwards;
+} 
+@keyframes slide-right {
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.neon{
+    color: white;
+    text-shadow:none;
+    font-family: neon;
+    text-shadow: 0 0 10px #08FDD8,
+    0 0 20px #08FDD8,
+    0 0 70px #08FDD8,
+    0 0 100px #08FDD8;
+    -webkit-text-stroke: 2px #08FDD8;
+}
+h2{
+    color: #CBD9F4;
+    font-family: neon;
+    font-size: 100px;
+    animation: neonLight 5s linear infinite;
+    margin-top: 120px;
+}
+@keyframes neonLight
+{
+    0%,20%,40%,60%{
+        color: #CBD9F4;
+        text-shadow:none;
+        -webkit-text-stroke: 1px #9c9c9c;
+    }
+    0.1%,20.1%,40.1%,60.1%,100%{
+        -webkit-text-stroke: 1px #08FDD8;
+        color: #ffffff;
+        text-shadow: 0 0 10px #08FDD8,
+                     0 0 20px #08FDD8,
+                     0 0 70px #08FDD8,
+                     0 0 100px #08FDD8;
+
+    }
+}
+#fname{
+    animation: Filling 0.5s linear forwards 2s;
+    width: 40%;
+}
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.left{
+    color: #ffffff;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 10%;
+    z-index: 2;
+    width: 65%;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    transform: translateX(500px);
+    animation: bulbAnim 1s ease-out 2s forwards;
+}
+.landingPage{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    overflow: hidden;
+    width: 100%;
+}
+.wrap{
+    display: flex;
+    height: 100vh;
+}
+.landingPage .tagline{
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.landingPage .fname , .lname{
+    font-size: 60px;
+    color: #f5f5f5; 
+    font-weight: 600;
+}
+.lname {
+    font-weight: 200;
+    opacity: 0;
+    color: #CBD9F4;
+    animation: appear 0.5s ease-in forwards 2s;
+    margin-top: -25px ;
+}
+
+.landingPage .desc{
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 10px;
+}
+.bulb {
+    width: 200px;
+    z-index: 1;
+}
+.square{
+    margin-top: -190px;
+    width: 45px;
+    height: 45px;
+    margin-left:70px ;
+    box-shadow: 0 0 150px #FAFA46,
+    0 0 160px #FAFA46,
+    0 0 170px #FAFA46,
+    0 0 180px #FAFA46,
+    0 0 190px #FAFA46,
+    0 0 200px #FAFA46;
+    z-index: 0;
+}
+
+ 
+  
+@keyframes bulbAnim {
+    to{
+        transform: translateX(0);
+    }
+}
+  @keyframes Filling{
+    0%{
+       fill: transparent;
+    }
+    100%{
+        fill: #ffffff;
+    }
+}
+.triangle-one{
+    position: relative;
+    margin-top:-70px ;
+    width: 200px;
+    transform: rotate(180deg);
+
+}
+
+.triangle-two{
+    position: relative;
+    margin-top:-70px ;
+    width: 200px;
+}
+
+
+
+#fname path:nth-child(2){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 1s ease forwards;
+}
+#fname path:nth-child(3){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 0.3s;
+
+}
+#fname path:nth-child(4){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 0.5s;
+
+}
+#fname path:nth-child(5){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 0.6s;
+
+}
+#fname path:nth-child(6){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 0.8s;
+
+}
+#fname path:nth-child(7){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1s;
+
+}
+#fname path:nth-child(8){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1.2s;
+
+}
+#fname path:nth-child(9){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1.4s;
+
+}
+#fname path:nth-child(10){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1.6s;
+
+}
+#fname path:nth-child(11){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1.8s;
+
+}
+#fname path:nth-child(11){
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: nameAnimation 2s ease forwards 1.8s;
+
+}
+
+
+
+
+@keyframes nameAnimation{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Background animation */
+.box{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+.box div{
+    position: inherit;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    box-shadow: 0 0 10px #08FDD8,
+    0 0 20px #08FDD8;
+    border: 2px solid #08FDD8;
+    opacity: 0;
+}
+
+.box div:nth-child(1){
+    top: 10%;
+    left:30%;
+    animation: background-animation 5s linear infinite 3.2s;
+}
+.box div:nth-child(2){
+    top: 30%;
+    left:40%;
+    animation: background-animation 5s linear infinite ;
+}
+.box div:nth-child(3){
+    top: 5%;
+    left:5%;
+    animation: background-animation 5s linear infinite 2.2s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}
+.box div:nth-child(4){
+    top: 85%;
+    left:20%;
+    animation: background-animation 5s linear infinite 0.5s;
+}
+.box div:nth-child(5){
+    top: 80%;
+    left:50%;
+    animation: background-animation 5s linear infinite 5s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}
+.box div:nth-child(6){
+    top: 60%;
+    left:1%;
+    animation: background-animation 5s linear infinite 1s;
+}
+.box div:nth-child(7){
+    top: 50%;
+    left:70%;
+    animation: background-animation 5s linear infinite 1.7s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}
+.box div:nth-child(8){
+    top: 40%;
+    left:90%;
+    animation: background-animation 5s linear infinite 3s;
+    box-shadow: 0 0 10px #d8fd08,
+    0 0 20px #d8fd08;
+    border: 2px solid #d8fd08;
+}
+.box div:nth-child(9){
+    top: 10%;
+    left:70%;
+    animation: background-animation 5s linear infinite 2s;
+
+}
+.box div:nth-child(10){
+    top: 80%;
+    left:80%;
+    animation: background-animation 5s linear infinite;
+}
+.box div:nth-child(11){
+    top: 45%;
+    left:45%;
+    animation: background-animation 5s linear infinite 1.4s;
+    box-shadow: 0 0 10px #d8fd08,
+    0 0 20px #d8fd08;
+    border: 2px solid #d8fd08;
+}
+.box div:nth-child(12){
+    top: 22%;
+    left:90%;
+    animation: background-animation 5s linear infinite 2.3s;
+}
+.box div:nth-child(13){
+    top: 59%;
+    left:22%;
+    animation: background-animation 5s linear infinite 3.2s;
+}
+.box div:nth-child(14){
+    top: 70%;
+    left:65%;
+    animation: background-animation 5s linear infinite 0.3s; 
+}
+.box div:nth-child(15){
+    top: 10%;
+    left:70%;
+    animation: background-animation 5s linear infinite 0.9s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}
+.box div:nth-child(16){
+    top: 80%;
+    left:5%;
+    animation: background-animation 5s linear infinite 2.9s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}.box div:nth-child(17){
+    top: 80%;
+    left:60%;
+    animation: background-animation 5s linear infinite 4s;
+    box-shadow: 0 0 10px #d8fd08,
+    0 0 20px #d8fd08;
+    border: 2px solid #d8fd08;
+}.box div:nth-child(18){
+    top: 5%;
+    left:20%;
+    animation: background-animation 5s linear infinite 3.2s;
+    box-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0;
+    border: 2px solid #fd08e0;
+}.box div:nth-child(19){
+    top: 78%;
+    left:75%;
+    animation: background-animation 5s linear infinite 2.4s;
+    box-shadow: 0 0 10px #d8fd08,
+    0 0 20px #d8fd08;
+    border: 2px solid #d8fd08;
+}.box div:nth-child(20){
+    top: 89%;
+    left:30%;
+    animation: background-animation 5s linear infinite ;
+    box-shadow: 0 0 10px #d8fd08,
+    0 0 20px #d8fd08;
+    border: 2px solid #d8fd08;
+}
+@keyframes background-animation {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+   
+    100%{
+        transform: scale(1.3) translateY(-120px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* Navigation Bar */
+nav{
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 2;
+    opacity: 0;
+    animation: appear 0.5s ease-in forwards 2s;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 601px) {
+nav ul li{
+    /* padding-left: 50px; */
+    padding-left:50px;
+}
+}
+
+@media screen and (min-width: 901px) {
+    .skills .row-reverse{
+        flex-direction: row-reverse;
+    }
+    .skill-card{
+        margin-bottom: 50px;
+    }
+}
+
+nav .logo{
+    margin-left: 5%;
+}
+
+a{
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: white;
+    text-shadow:none;
+    font-family: neon;
+    text-shadow: 0 0 10px #fd08e0,
+    0 0 20px #fd08e0,
+    0 0 70px #fd08e0,
+    0 0 100px #fd08e0;
+    -webkit-text-stroke: 2px #fd08e0;
+}
+
+
+
+
+
+/* Skills section  */
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center; 
+    margin-top: 100px;
+}
+.skills h3{
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.skill-card{
+    display: flex;
+    width: 80%;
+}
+.skill-name{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.skill-name div:nth-child(2){
+    position: relative;
+    top: -84%;
+    font-size: x-large;
+}
+.tech{
+    margin-top: 10px;
+    float: right;
+}
+.tech button{
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.tech .purple{
+    border: 1px solid #fd08e0;
+}
+.tech .yellow{
+    border: 1px solid #d8fd08;
+}
+.tech .blue{
+    border: 1px solid #08FDD8;
+}
+
+.skills .float-left{
+    float: left;
+}
+
+/* Projects  */
+.projects-box{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 150px;
+    align-items: center;
+}
+.projects{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-project{
+    width: 300px;
+    background-color: #4d4b4b;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card-project:hover {
+    background-color: #08FDD8;
+    cursor: pointer;
+}
+.card-project::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 650px;
+    background-image: linear-gradient(#fd08e0, #d8fd08);
+    margin: auto;
+    inset: 0px;
+    animation: card-animation 5s linear infinite;
+    z-index: -1;
+}
+.card-project::after{
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 97%;
+    margin: auto;
+    inset: 4px;
+    z-index: -1;
+}
+@keyframes card-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-project img{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+}
+.card-project h4{
+    font-weight: 400;
+    font-size: large;
+    color: #fd08e0;
+}
+.card-project p{
+    font-weight: 400;
+}
+.projects-box .title-projects{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+
+
+/* Footer  */
+footer{
+    background-color: #2C2932;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.contact{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h3{
+    font-weight: 400;
+    font-size: x-large;
+    color: #08FDD8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact h5{
+    font-size: medium;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.contact .fill-Info{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 100;
+}
+.contact .fill-Info input,textarea{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    color: #000000;
+}
+.message textarea[type=text]{
+    height: 100px;
+    resize: none;
+}
+.contact .fill-Info input:focus,textarea[type=text] {
+    border: none;
+    outline:none;
+}
+.contact  button{
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    margin-top: 5px;
+    color: #08FDD8;
+    border: 1px solid #08FDD8;
+    cursor: pointer;
+    margin-bottom: 40px;
+    width: 100px;
+}
+.contact button:hover{
+    border: 1px solid #fd08e0;
+    color: #fd08e0;
+}
+
+.contact span{
+    color: #d8fd08;
+}
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+ 
+@media screen and (max-width: 600px) {
+    .landingPage{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100vh;
+    }
+    #fname{
+        width: 60%;
+        animation: Filling 0.5s linear forwards 2s;
+    }
+    ul{
+        position: inherit;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    nav ul li{
+        padding-left: 0px;
+        margin: 0;
+    }
+
+ 
+    .wrap{
+        height: auto;
+        padding-top: 15%;
+    }
+    .left{
+        padding: 0;
+        padding-top: 20%;
+        width: 90%;
+        margin-top:0;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 70%;
+        justify-content: right;
+    }
+    .right{
+        margin: 0;
+        margin-top: 10px;
+        height: 30%;
+    }
+    .landingPage .desc{
+        padding-top: 5%;
+        padding-left: 4px;
+    }
+    .landingPage .fname{
+        margin-top: 0;
+    }
+
+    .landingPage .tagline{
+        margin-bottom: 5%;
+    }
+    
+    .contact {
+        width: 90%;
+    }
+   
+  }
+@media screen and (max-width: 1021px) {
+    .landingPage .fname , .lname{
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+    .landingPage .desc{
+        font-size: 20px;
+    }
+
+    .bulb{
+        width: 90px;
+    }
+    .square{
+        margin-left: 20px;
+        margin-top: -110px;
+    }
+    
+    .right{
+        align-items: center;
+
+    }
+    h2{
+        font-size: 50px;
+        margin-top: 55px;
+
+    }
+
+    .skill-card{
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 150px;
+    }
+    .skill .row-reverse{
+        flex-direction: column;
+    }
+
+    .skill-card .skill-name div:nth-child(2){
+        position: relative;
+        top: -200px;
+    }
+    .skill-name svg{
+        position: relative;
+        
+    }
+    .skill-name{
+        margin-bottom: -50px;
+    }
+    .tech{
+        float: left;
+    }
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects .card-project{
+        margin-bottom: 20px;
+    }
+  }
+  
