@@ -755,20 +755,13 @@ footer{
     .contact {
         width: 90%;
     }
-   
-  }
-@media screen and (max-width: 1021px) {
-
+    
     .box div:nth-child(1){
         top: 90%;
         left:30%;
         animation: background-animation 5s linear infinite 3.2s;
     }
-    .box div:nth-child(2){
-        top: 30%;
-        left:40%;
-        animation: background-animation 5s linear infinite ;
-    }
+/* 
     .box div:nth-child(3){
         top: 70%;
         left:10%;
@@ -792,7 +785,10 @@ footer{
         box-shadow: 0 0 10px #d8fd08,
         0 0 20px #d8fd08;
         border: 2px solid #d8fd08;
-    }
+    } */
+   
+  }
+@media screen and (max-width: 1021px) {
     .landingPage .fname , .lname{
         font-size: 45px;
         letter-spacing: 2px;
