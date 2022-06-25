@@ -47,7 +47,7 @@ h2{
 }
 @keyframes neonLight
 {
-    /* 0%,20%,40%,60%{
+    0%,20%,40%,60%{
         color: #CBD9F4;
         text-shadow:none;
         -webkit-text-stroke: 1px #9c9c9c;
@@ -60,7 +60,7 @@ h2{
                      0 0 70px #08FDD8,
                      0 0 100px #08FDD8;
 
-    } */
+    }
 }
 #fname{
     animation: Filling 0.5s linear forwards 2s;
